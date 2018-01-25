@@ -9,5 +9,6 @@ import {StocksCompoent} from './stocks.component';
 })
 export class AppComponent {
   title = 'Hello Angualar 2';
+  today=new Date;
 }
 
