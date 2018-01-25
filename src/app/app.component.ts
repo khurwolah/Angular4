@@ -1,19 +1,7 @@
 import { Component } from '@angular/core';
 import {StocksCompoent} from './stocks.component';
 import{FormsModule} from '@angular/forms';
-
-class Employee{
-
-  firstName: string;
-  lastName: string;
-  salary: number;
-
-  constructor (firstName, lastName, salary){
-    this.firstName= firstName;
-    this.lastName= lastName;
-    this.salary=salary;
-  }
-}
+import {Employee} from './employee';
 
 
 @Component({
