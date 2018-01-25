@@ -13,13 +13,14 @@ import { CapitalizePipePipe } from './capitalize-pipe.pipe';
 import {FormsModule} from'@angular/forms';
 import {StockService} from './stock.service';
 import {StocksCompoent} from './stocks.component';
+import { EmployeeNamePipe } from './employee-name.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent, StocksCompoent
+    AppComponent, StocksCompoent,CapitalizePipePipe, EmployeeNamePipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

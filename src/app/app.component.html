@@ -1,8 +1,15 @@
-{{today|date: "dd/MMM/yyy hh:mm a"}}
+<div style="text-align:center">
 <h1>
-  {{title}}
+  Custom Angular Pipe Example
 </h1>
+</div>
+<label name="fName">First Name:
+  <input [(ngModel)]="firstName" type="text">
+</label>
 
-<stock>
-</stock>
+<br />
+<label >Employee Name:
+  {{employee|employeeName}}
+</label>
+
 
