@@ -11,9 +11,6 @@ import {Employee} from './employee';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  firstName='jon';
-
-  employee: Employee= new Employee('John', 'Smith', 10000);
+profile={id: 1001, name: 'James Bond', role: 'Administrator'};
 }
 

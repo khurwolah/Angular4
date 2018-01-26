@@ -1,15 +1,8 @@
-<div style="text-align:center">
-<h1>
-  Custom Angular Pipe Example
-</h1>
+<div *ngIf="profile else noProfileFound">
+  Name:{{profile.name}}
+
 </div>
-<label name="fName">First Name:
-  <input [(ngModel)]="firstName" type="text">
-</label>
 
-<br />
-<label >Employee Name:
-  {{employee|employeeName}}
-</label>
-
-
+<ng-template #noProfileFound>
+  No Profile Found with ng template
+</ng-template>

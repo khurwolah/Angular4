@@ -2,10 +2,22 @@ import {Component} from '@angular/core';
 import {StockService} from './stock.service';
 @Component({
     selector:'stock',
-    template:'<h1>Stocks</h1>'
+    template:`<h2>Stocks</h2>
+    {{title}}
+    Test
+    <ul>
+    <li *ngFor="let stock of stocks">
+    {{stock}}
+    </li>
+    </ul>`
 })
 
 export class StocksCompoent{
-    title="Hello Angular 2"
+    title='List of Socks: ';
+    stocks;
+
+    constructor(stockService: StockService){
+        this.stocks= stockService.getStocks();
+    }
 }
 

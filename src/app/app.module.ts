@@ -14,15 +14,18 @@ import {FormsModule} from'@angular/forms';
 import {StockService} from './stock.service';
 import {StocksCompoent} from './stocks.component';
 import { EmployeeNamePipe } from './employee-name.pipe';
-
+import {routing} from './app.routing';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {CurrencyService} from './currency.service';
+import {BondsDirective} from './bonds.directive';
 @NgModule({
   declarations: [
-    AppComponent, StocksCompoent,CapitalizePipePipe, EmployeeNamePipe
+    AppComponent, StocksCompoent,CapitalizePipePipe, EmployeeNamePipe, DashboardComponent, BondsDirective
   ],
   imports: [
-    BrowserModule,FormsModule
+    BrowserModule,FormsModule, routing
   ],
-  providers: [],
+  providers: [StockService, CurrencyService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
